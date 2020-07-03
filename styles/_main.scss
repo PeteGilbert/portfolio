@@ -1,0 +1,67 @@
+.headerBackground {
+    background-image: url(./assets/vscode.PNG);
+    height: 100vh;
+    filter: blur(3px);
+    background-size: cover;
+}
+
+header {
+    @include flexCenter;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+section {
+    margin: 100px 0;
+}
+
+.border {
+    border: 2px $colorOne solid;
+    padding: 50px;
+    position: relative;
+    @include flexCenter
+
+}
+
+.border h3 {
+    position: absolute;
+    top: -12px;
+    background-color: white;
+    display: inline-block;
+    padding: 0 70px;
+    color: $colorTwo
+}
+
+h4 {
+    color: $colorTwo
+}
+
+.fa-html5 {
+    color: #f4470b
+}
+
+.fa-js-square {
+    color: #efd81d
+}
+
+.fa-sass {
+    color: #cf689a
+}
+
+.fa-css3-alt {
+    color: #146eb0
+}
+
+.fa-react {
+    color: #5ed3f3
+}
+
+.fab {
+    font-size: 60px;
+    margin: 0 10px;
+}
+
