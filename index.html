@@ -6,6 +6,7 @@
     <title>Pete Gilbert</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/0f164095e1.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -41,6 +42,7 @@
                 </li>
                 <li>
                     <i class="fab fa-react"></i>
+                    <img class="firebase" src="./styles/assets/firebase.png" alt="firebase">
                     <h4>Modern, Scalable Applications</h4>
                     <p>I love seeing ideas come to life in the browser. I love it even more when we can easily build on those ideas tomorrow.</p>
                 </li>
@@ -49,17 +51,42 @@
     </section>
 
 
-    <section class="projects">
+    <section>
         <h3>Projects</h3>
-        <ul>
-            <li>Quarantine Pursuit</li>
-            <li>Directions From Dad</li>
-            <li>Where's the Weather Better?</li>
+        <ul class="projects">
+            <li class="quarantinePursuit">
+                <div>
+                    <img class="quarantineTitle" src="./styles/assets/quarantinePursuit.png" alt="Quarantine Pursuit">
+                </div>
+                <i class="fab fa-react"></i>
+                <i class="fab fa-sass"></i>
+                <img class="firebase" src="./styles/assets/firebase.png" alt="firebase">
+                <p>React App that allows users to create quizzes which uses axios to fetch data from the opentdb API. Users can then save these quizzes in Firebase and retrieve them any time.</p>
+            </li>
+            <li class="getProductive">
+                <h4>Let's Get Productive</h4>
+                <i class="fab fa-react"></i>
+                <i class="fab fa-css3-alt"></i>
+                <img class="firebase" src="./styles/assets/firebase.png" alt="firebase">
+                <p>React App that stores the users goals and associated difficulty in firebase. It then asks the users for their current energy levels, compares this to the difficulty of their goals and reccomends an appropriate task for the moment.</p>
+            </li>
+            <li class="directionsFromDad">
+                <h4>Directions From Dad</h4>
+                <img class="jquery" src="./styles/assets/jquery.png" alt="jquery">
+                <i class="fab fa-sass"></i>
+                <p>A game built with Jquery in which the user needs to track the current cardinal direction as the game progressively creates more difficult random directions.</p>
+            </li>
+            
         </ul>
     </section>
 
-    <section class="contactMe">
-        <h3>Contact Me</h3>
+    <section>
+        <div class="border wrapper contactMe">
+            <h3>Contact Me</h3>
+            <p>Interested in working together? Let's Connect!</p>
+            <button>Contact Me</button>
+        </div>
+        
     </section>
 </body>
 </html>

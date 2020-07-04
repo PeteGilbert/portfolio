@@ -286,7 +286,7 @@ header {
   position: absolute;
   top: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   color: white;
 }
 
@@ -345,4 +345,75 @@ h4 {
 .fab {
   font-size: 60px;
   margin: 0 10px;
+}
+
+.firebase,
+.jquery {
+  height: 60px;
+  position: relative;
+  top: 7px;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects li {
+  width: calc(100vw / 3);
+  padding-top: 25px;
+}
+
+.quarantinePursuit {
+  background-color: #afedff;
+  color: #373737;
+}
+
+.quarantineTitle {
+  height: 80px;
+}
+
+.getProductive {
+  background: -webkit-gradient(linear, left bottom, left top, from(#283E51), to(#0A2342));
+  background: linear-gradient(to top, #283E51, #0A2342);
+  color: white;
+}
+
+.getProductive h4 {
+  font-family: "Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  text-transform: none;
+  color: white;
+  font-size: 40px;
+}
+
+.directionsFromDad {
+  background-color: #79c7d4;
+  color: #373737;
+}
+
+.directionsFromDad h4 {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  font-size: 40px;
+}
+
+.contactMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+button {
+  background-color: #373737;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 20px;
 }
