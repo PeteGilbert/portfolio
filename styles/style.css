@@ -567,18 +567,21 @@ textarea {
 #menu__toggle:checked ~ .menu__btn > span {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  background-color: #f57f17;
 }
 
 #menu__toggle:checked ~ .menu__btn > span::before {
   top: 0;
   -webkit-transform: rotate(0);
           transform: rotate(0);
+  background-color: #f57f17;
 }
 
 #menu__toggle:checked ~ .menu__btn > span::after {
   top: 0;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  background-color: #f57f17;
 }
 
 #menu__toggle:checked ~ .menu__box {
