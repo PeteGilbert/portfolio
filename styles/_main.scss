@@ -144,7 +144,8 @@ h4 {
     flex-direction: column;
 }
 
-a {
+a,
+.showForm {
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -161,7 +162,8 @@ a {
     justify-content: space-evenly;
 }
 
-.contactLinks a { 
+.contactLinks a,
+.showForm { 
     width: 100%;
     display: flex;
     color: #283E51
@@ -170,8 +172,47 @@ a {
 .contactLinks {
     display: flex;
 }
-a:hover {
+
+a:hover,
+.showForm:hover {
     color: #f57f17
 }
 
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
 
+.namePair {
+    width: 50%;
+}
+
+.emailPair {
+    width: 50%;
+}
+
+.messagePair {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 250px;
+}
+
+.submitForm {
+    color: white;
+    background-color: #283E51;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+.hidden {
+    display: none;
+}

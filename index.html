@@ -120,15 +120,34 @@
                     <i class="fas fa-calendar-alt"></i>
                     Book a Time to Chat
                 </a>
-                <a href="https://calendly.com/pete-gilbert16/30min">
+                <div class="showForm">
                     <i class="fas fa-envelope"></i>
                     Leave a Message
-                </a>
-
-
+                </div>
             </div>
+
+            <form class="hidden" action="http://www.focuspocus.io/magic/fb5ba15f93cf10ac591550236546f588" method="POST">
+                <div class="namePair">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name">
+                </div>
+
+                <div class="emailPair">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>  
+
+                <div class="messagePair">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <button class="submitForm">Submit</button>
+            </form>
+
         </div>
         
     </section>
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <script src ="./scripts/script.js"></script>
 </body>
 </html>
