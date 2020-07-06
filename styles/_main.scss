@@ -1,3 +1,8 @@
+.noscroll{
+    position:fixed;
+    overflow: hidden;
+}
+
 .headerBackground {
     background-image: url(./assets/vscode.PNG);
     height: 100vh;
@@ -5,14 +10,34 @@
     background-size: cover;
 }
 
-header {
-    @include flexCenter;
-    flex-direction: column;
+.scroll{
+    overflow-y: scroll;
     position: absolute;
     top: 0;
+    width: 99vw;
     height: 100vh;
-    width: 100%;
+
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+.scroll::-webkit-scrollbar { 
+    display: none; 
+}
+
+header {
+    margin-top: 45vh;
     color: white;
+}
+
+.aboutMe {
+    margin-top: 500px;
+    margin-bottom: 400px;
+    color: white;
+}
+
+.aboutTitle{
+    color: white;
+
 }
 
 section {
@@ -60,7 +85,8 @@ h4 {
     color: #5ed3f3
 }
 
-.fab {
+.fab,
+.fas {
     font-size: 60px;
     margin: 0 10px;
 }
@@ -74,12 +100,13 @@ h4 {
 
 .projects {
     display: flex;
-
+    justify-content: space-evenly;
 }
 
 .projects li {
-    width: calc(100vw / 3);
+    width: 30%;
     padding-top: 25px;
+    border-radius: 20px;
 }
 
 .quarantinePursuit {
@@ -117,12 +144,34 @@ h4 {
     flex-direction: column;
 }
 
-button {
-    background-color: $colorTwo;
+a {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
     color: white;
-    font-size: 20px;
+    text-decoration: none;
     text-transform: uppercase;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 20px;
+    font-weight: 700;
 }
+
+
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contactLinks a { 
+    width: 100%;
+    display: flex;
+    color: #283E51
+}
+
+.contactLinks {
+    display: flex;
+}
+a:hover {
+    color: #f57f17
+}
+
+

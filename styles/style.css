@@ -261,6 +261,11 @@ body {
   text-align: center;
 }
 
+.noscroll {
+  position: fixed;
+  overflow: hidden;
+}
+
 .headerBackground {
   background-image: url(./assets/vscode.PNG);
   height: 100vh;
@@ -269,24 +274,32 @@ body {
   background-size: cover;
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.scroll {
+  overflow-y: scroll;
   position: absolute;
   top: 0;
+  width: 99vw;
   height: 100vh;
-  width: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  margin-top: 45vh;
+  color: white;
+}
+
+.aboutMe {
+  margin-top: 500px;
+  margin-bottom: 400px;
+  color: white;
+}
+
+.aboutTitle {
   color: white;
 }
 
@@ -342,7 +355,8 @@ h4 {
   color: #5ed3f3;
 }
 
-.fab {
+.fab,
+.fas {
   font-size: 60px;
   margin: 0 10px;
 }
@@ -358,11 +372,15 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .projects li {
-  width: calc(100vw / 3);
+  width: 30%;
   padding-top: 25px;
+  border-radius: 20px;
 }
 
 .quarantinePursuit {
@@ -408,12 +426,44 @@ h4 {
           flex-direction: column;
 }
 
-button {
-  background-color: #373737;
+a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
   color: white;
-  font-size: 20px;
+  text-decoration: none;
   text-transform: uppercase;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 20px;
+  font-weight: 700;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contactLinks a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #283E51;
+}
+
+.contactLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+a:hover {
+  color: #f57f17;
 }
