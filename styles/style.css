@@ -235,6 +235,11 @@ html {
   overflow: hidden;
 }
 
+@font-face {
+  font-family: 'signature';
+  src: url(./assets/jennifer_lynne-webfont.woff);
+}
+
 li {
   text-decoration: none;
   list-style: none;
@@ -261,6 +266,10 @@ body {
   text-align: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .noscroll {
   position: fixed;
   overflow: hidden;
@@ -278,7 +287,7 @@ body {
   overflow-y: scroll;
   position: absolute;
   top: 0;
-  width: 99vw;
+  width: 98vw;
   height: 100vh;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -289,13 +298,30 @@ body {
 }
 
 header {
-  margin-top: 45vh;
+  margin-top: 40vh;
   color: white;
+}
+
+h1 {
+  font-family: 'signature', cursive;
+  text-transform: none;
+  font-size: 120px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-transform: none;
+}
+
+#aboutMe {
+  position: relative;
+  top: 300px;
 }
 
 .aboutMe {
   margin-top: 500px;
-  margin-bottom: 400px;
+  margin-bottom: 300px;
   color: white;
 }
 
@@ -381,6 +407,17 @@ h4 {
   width: 30%;
   padding-top: 25px;
   border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 20px;
 }
 
 .quarantinePursuit {
@@ -390,6 +427,10 @@ h4 {
 
 .quarantineTitle {
   height: 80px;
+  width: 400px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .getProductive {
@@ -513,4 +554,111 @@ textarea {
 
 .hidden {
   display: none;
+}
+
+.hamburger-menu {
+  height: 0;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+  z-index: 20;
+}
+
+.menu__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 30;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ECEFF1;
+  -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+.hamburger-menu a {
+  width: 100%;
 }

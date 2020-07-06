@@ -7,21 +7,37 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/0f164095e1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="headerBackground"></div>
     <div class="scroll">
+        <nav class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+            <span></span>
+            </label>
+        
+            <ul class="menu__box">
+                    <li><a class="menu__item" href="#aboutMe">About Me</a></li>
+                    <li><a class="menu__item" href="#whatIDo">What I Do</a></li>
+                    <li><a class="menu__item" href="#projects">Projects</a></li>
+                    <li><a class="menu__item" href="#contactMe">Contact Me</a></li>
+            </ul>
+        </nav>
         <header>
             <h1>Pete Gilbert</h1>
             <h2>Web Developer</h2>
         </header>
+        <span id="aboutMe"></span>
         <section class="aboutMe">
             <div class="border wrapper">
                 <h3>About Me</h3>
                 <p>Hi, I'm Pete! I love problem solving, puzzles, and computers. Naturally, this means I love programming and developing web applications. When I'm not coding you will usually find me underwater or on a rockclimbing wall.</p>
             </div>
         </section>
+        <span id="whatIDo"></span>
     </div>
 
     <section class="whatIDo">
@@ -51,16 +67,16 @@
     </section>
 
 
-    <section>
+    <section id="projects">
         <h3>Projects</h3>
-        <ul class="projects">
+        <ul class="projects" >
             <li class="quarantinePursuit">
+                <img class="quarantineTitle" src="./styles/assets/quarantinePursuit.png" alt="Quarantine Pursuit">
                 <div>
-                    <img class="quarantineTitle" src="./styles/assets/quarantinePursuit.png" alt="Quarantine Pursuit">
-                </div>
-                <i class="fab fa-react"></i>
-                <i class="fab fa-sass"></i>
-                <img class="firebase" src="./styles/assets/firebase.png" alt="firebase">
+                    <i class="fab fa-react"></i>
+                    <i class="fab fa-sass"></i>
+                    <img class="firebase" src="./styles/assets/firebase.png" alt="firebase">
+                </div>  
                 <p>React App that allows users to create quizzes which uses axios to fetch data from the opentdb API. Users can then save these quizzes in Firebase and retrieve them any time.</p>
                 <div class="links"> 
                     <a target="_blank" href="https://npsj-quarantine-pursuit.github.io/quarantine-pursuit/">
@@ -75,9 +91,11 @@
             </li>
             <li class="getProductive">
                 <h4>Let's Get Productive</h4>
-                <i class="fab fa-react"></i>
-                <i class="fab fa-css3-alt"></i>
-                <img class="firebase" src="./styles/assets/firebase.png" alt="firebase">
+                <div>
+                    <i class="fab fa-react"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <img class="firebase" src="./styles/assets/firebase.png" alt="firebase">
+                </div>
                 <p>React App that stores the users goals and associated difficulty in firebase. It then asks the users for their current energy levels, compares this to the difficulty of their goals and reccomends an appropriate task for the moment.</p>
                 <div class="links"> 
                     <a target="_blank" href="https://petegilbert.github.io/peteGilbertProject5/">
@@ -92,8 +110,10 @@
             </li>
             <li class="directionsFromDad">
                 <h4>Directions From Dad</h4>
-                <img class="jquery" src="./styles/assets/jquery.png" alt="jquery">
-                <i class="fab fa-sass"></i>
+                <div>
+                    <img class="jquery" src="./styles/assets/jquery.png" alt="jquery">
+                    <i class="fab fa-sass"></i>
+                </div>
                 <p>A game built with Jquery in which the user needs to track the current cardinal direction as the game progressively creates more difficult random directions.</p>
                 <div class="links"> 
                     <a target="_blank" href="https://petegilbert.github.io/peteGilbertProject3/">
@@ -110,7 +130,7 @@
         </ul>
     </section>
 
-    <section>
+    <section id="contactMe">
         <div class="border wrapper contactMe">
             <h3>Contact Me</h3>
             <p>Interested in working together? Let's Connect!</p>

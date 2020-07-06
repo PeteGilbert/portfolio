@@ -14,7 +14,7 @@
     overflow-y: scroll;
     position: absolute;
     top: 0;
-    width: 99vw;
+    width: 98vw;
     height: 100vh;
 
     -ms-overflow-style: none; 
@@ -25,13 +25,30 @@
 }
 
 header {
-    margin-top: 45vh;
+    margin-top: 40vh;
     color: white;
 }
 
+h1 {
+    font-family: 'signature', cursive;
+    text-transform: none;
+    font-size: 120px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-transform: none;
+}
+
+// sets anchor height for nav menu
+#aboutMe {
+    position: relative;
+    top: 300px;
+}
 .aboutMe {
     margin-top: 500px;
-    margin-bottom: 400px;
+    margin-bottom: 300px;
     color: white;
 }
 
@@ -107,6 +124,10 @@ h4 {
     width: 30%;
     padding-top: 25px;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
 }
 
 .quarantinePursuit {
@@ -115,6 +136,8 @@ h4 {
 }
 .quarantineTitle {
     height: 80px;
+    width: 400px;
+    align-self: center;
 }
 
 .getProductive {
