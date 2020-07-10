@@ -84,6 +84,10 @@ h4 {
     color: $colorTwo
 }
 
+.whatIDoList li {
+    padding: 20px 0;
+}
+
 
 .projects {
     display: flex;
@@ -98,6 +102,10 @@ h4 {
     flex-direction: column;
     justify-content: space-evenly;
     padding-bottom: 20px;
+}
+
+.projects li p {
+    margin: 0 20px;
 }
 
 .quarantinePursuit {
