@@ -268,6 +268,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  overscroll-behavior-y: none;
 }
 
 .noscroll {
@@ -359,39 +360,6 @@ section {
 
 h4 {
   color: #373737;
-}
-
-.fa-html5 {
-  color: #f4470b;
-}
-
-.fa-js-square {
-  color: #efd81d;
-}
-
-.fa-sass {
-  color: #cf689a;
-}
-
-.fa-css3-alt {
-  color: #146eb0;
-}
-
-.fa-react {
-  color: #5ed3f3;
-}
-
-.fab,
-.fas {
-  font-size: 60px;
-  margin: 0 10px;
-}
-
-.firebase,
-.jquery {
-  height: 60px;
-  position: relative;
-  top: 7px;
 }
 
 .projects {
@@ -524,12 +492,10 @@ form {
   margin: 20px 0;
 }
 
-.namePair {
-  width: 50%;
-}
-
+.namePair,
 .emailPair {
   width: 50%;
+  padding: 20px;
 }
 
 .messagePair {
@@ -554,6 +520,36 @@ textarea {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 900px) {
+  .projects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projects li {
+    width: 90%;
+    margin: 20px 0;
+  }
+  .namePair,
+  .emailPair {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .quarantineTitle {
+    width: 250px;
+    height: 50px;
+  }
+  .directionsFromDad h4 {
+    font-size: 20px;
+  }
 }
 
 .hamburger-menu {
@@ -664,4 +660,37 @@ textarea {
 
 .hamburger-menu a {
   width: 100%;
+}
+
+.fa-html5 {
+  color: #f4470b;
+}
+
+.fa-js-square {
+  color: #efd81d;
+}
+
+.fa-sass {
+  color: #cf689a;
+}
+
+.fa-css3-alt {
+  color: #146eb0;
+}
+
+.fa-react {
+  color: #5ed3f3;
+}
+
+.fab,
+.fas {
+  font-size: 60px;
+  margin: 0 10px;
+}
+
+.firebase,
+.jquery {
+  height: 60px;
+  position: relative;
+  top: 7px;
 }

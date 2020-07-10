@@ -10,6 +10,7 @@
     background-size: cover;
 }
 
+// Allows About Me section to scroll up while rest of page scrolls normally
 .scroll{
     overflow-y: scroll;
     position: absolute;
@@ -20,6 +21,7 @@
     -ms-overflow-style: none; 
     scrollbar-width: none;  
 }
+
 .scroll::-webkit-scrollbar { 
     display: none; 
 }
@@ -82,38 +84,6 @@ h4 {
     color: $colorTwo
 }
 
-.fa-html5 {
-    color: #f4470b
-}
-
-.fa-js-square {
-    color: #efd81d
-}
-
-.fa-sass {
-    color: #cf689a
-}
-
-.fa-css3-alt {
-    color: #146eb0
-}
-
-.fa-react {
-    color: #5ed3f3
-}
-
-.fab,
-.fas {
-    font-size: 60px;
-    margin: 0 10px;
-}
-
-.firebase,
-.jquery {
-    height: 60px;
-    position: relative;
-    top: 7px
-}
 
 .projects {
     display: flex;
@@ -208,12 +178,10 @@ form {
     margin: 20px 0;
 }
 
-.namePair {
-    width: 50%;
-}
-
+.namePair,
 .emailPair {
     width: 50%;
+    padding: 20px;
 }
 
 .messagePair {
@@ -239,3 +207,32 @@ textarea {
 .hidden {
     display: none;
 }
+
+@media (max-width: 900px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects li {
+        width: 90%;
+        margin: 20px 0 ;
+    }
+    .namePair,
+    .emailPair {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1400px){
+
+    .quarantineTitle {
+        width: 250px;
+        height: 50px;
+    }
+
+    .directionsFromDad h4 {
+        font-size: 20px;
+    }
+}
+

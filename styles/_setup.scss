@@ -29,7 +29,9 @@ body{
     text-align: center;
 }
 
+// Makes the transition between scrolling style of first and second half of site cleaner. Does not work in Safari.
 html {
     scroll-behavior: smooth;
+    overscroll-behavior-y: none;
 }
 

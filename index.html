@@ -8,24 +8,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="./styles/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./styles/assets/favicon-16x16.png">
     <script src="https://kit.fontawesome.com/0f164095e1.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <nav class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+        <span></span>
+        </label>
+        <ul class="menu__box">
+                <li><a class="menu__item" href="#aboutMe">About Me</a></li>
+                <li><a class="menu__item" href="#whatIDo">What I Do</a></li>
+                <li><a class="menu__item" href="#projects">Projects</a></li>
+                <li><a class="menu__item" href="#contactMe">Contact Me</a></li>
+        </ul>
+    </nav>
+
     <div class="headerBackground"></div>
+
     <div class="scroll">
-        <nav class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-            <span></span>
-            </label>
-        
-            <ul class="menu__box">
-                    <li><a class="menu__item" href="#aboutMe">About Me</a></li>
-                    <li><a class="menu__item" href="#whatIDo">What I Do</a></li>
-                    <li><a class="menu__item" href="#projects">Projects</a></li>
-                    <li><a class="menu__item" href="#contactMe">Contact Me</a></li>
-            </ul>
-        </nav>
         <header>
             <h1>Pete Gilbert</h1>
             <h2>Web Developer</h2>
